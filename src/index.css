@@ -1,0 +1,179 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    background-image: radial-gradient(circle farthest-corner at center);
+  }
+  
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    perspective: 800px;
+    margin-top: -50px;
+    margin-left: -50px;
+  }
+  
+  .inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;  
+  }
+  
+  .inner.one {
+    left: 0%;
+    top: 0%;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #ff0000;
+  }
+  
+  .inner.two {
+    right: 0%;
+    top: 0%;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #ff0000;
+  }
+  
+  .inner.three {
+    right: 0%;
+    bottom: 0%;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid #ff0000;
+  }
+  
+  @keyframes rotate-one {
+    0% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-two {
+    0% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-three {
+    0% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+  }
+  
+  .divTranslation {
+    margin-top: 2%;
+    display: flex;            
+    justify-content: center;            
+    align-items: center;
+  }
+
+  .divTranslation input {
+    border: 3;
+    border-color: aquamarine;
+    border-radius: 45px;
+    padding: 1% 1.7% 1.2% 1.7%;
+    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .divTranslation button {
+  background-color: aquamarine;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: rgb(15, 71, 15);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 3%;
+  width: 120px;
+}
+
+.divTranslation button:hover {
+  box-shadow: rgba(47, 117, 74, 0.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.divRadio {
+  margin-left: 2%;
+  width: 20%;
+  font-size: 12px;
+  text-align: center;
+}
+
+.divRadioButton {
+  background-color: #ffffff;
+  text-align: start;
+  font-size: 14px;
+}
+
+
+.divSingle {
+  flex-direction: row;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.card{
+  width: 330px;
+  height: 372px;
+  padding: 1%;
+  background-color: rgb(219, 219, 219);
+  float: left;
+}
+
+.card button {
+  width: 40px;
+  height: 40px;
+  margin-top: auto;
+  align-self: end;
+  border-radius: 45px;
+  border: none;
+  background-position: center;
+  background-image: url('/public/assets/images/favourite.png');
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+
+.card button:hover{
+  box-shadow: rgba(152, 80, 80, 0.35) 0 -25px 18px -14px inset,rgba(142, 68, 68, 0.25) 0 1px 2px,rgba(153, 88, 88, 0.25) 0 2px 4px,rgba(149, 95, 83, 0.25) 0 4px 8px,rgba(215, 119, 119, 0.25) 0 8px 16px,rgba(152, 118, 118, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.cardImg{
+  border-radius: 15px;
+}
+
+.divImagesList {
+  margin-top: 2%;
+}
+
+.divImagesList ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
