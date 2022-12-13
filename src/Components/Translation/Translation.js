@@ -11,9 +11,9 @@ function Translation() {
     const options = {
         method: 'POST',
         headers: {
-            'content-type': 'application/json',
-            'X-RapidAPI-Key': '59fc1ac59fmsh1c66d82f1bcf728p169beajsn19e5e24f4743',
-            'X-RapidAPI-Host': 'deep-translate1.p.rapidapi.com'
+            'content-type': '', //Your Keys.
+            'X-RapidAPI-Key': '', //Your Keys.
+            'X-RapidAPI-Host': '' //Your Keys.
         },
         body: `{"q":"${input}","source":"tr","target":"en"}`
     };
