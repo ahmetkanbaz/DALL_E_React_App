@@ -11,9 +11,9 @@ function Translation() {
     const options = {
         method: 'POST',
         headers: {
-            'content-type': '', //Your Keys.
-            'X-RapidAPI-Key': '', //Your Keys.
-            'X-RapidAPI-Host': '' //Your Keys.
+            'content-type': 'Your Keys.',
+            'X-RapidAPI-Key': 'Your Keys.',
+            'X-RapidAPI-Host': 'Your Keys.'
         },
         body: `{"q":"${input}","source":"tr","target":"en"}`
     };
