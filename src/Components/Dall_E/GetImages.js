@@ -8,7 +8,7 @@ function GetImages(props){
     const [images, setImages] = useState()
     const [loading, setLoading] = useState(false)
 
-    const API_KEY = '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'
+    const API_KEY = '' //Your API Key.
 
     const configuration = new Configuration({
         apiKey: API_KEY
