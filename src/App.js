@@ -7,7 +7,6 @@ function App(){
     return(
         <div>
             <Container>
-        
                 <Translation />
             </Container>
         </div>
