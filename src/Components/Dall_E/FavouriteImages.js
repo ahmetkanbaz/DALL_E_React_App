@@ -5,7 +5,6 @@ function FavouriteImages(props){
         <div>
             
         
-        
         </div>
     )
 }
